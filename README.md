@@ -85,7 +85,7 @@ In Finder, press **Command + Shift + G**, enter `~/Library/Containers/`, and loc
 To find the app's bundle identifier, run this in Terminal, replacing the example path with the installed app's actual path:
 
 ```bash
-mdls -name kMDItemCFBundleIdentifier -raw "/Applications/Manhuaren.app"
+mdls -name kMDItemCFBundleIdentifier "/Applications/漫画人极速版.app"
 ```
 
 You can also type `mdls -name kMDItemCFBundleIdentifier -raw ` (including the trailing space), drag the app from Finder into Terminal to insert its path, and press **Return**. Use the returned identifier to look for the matching folder under `~/Library/Containers/`. If the command returns `(null)`, Spotlight has not provided an identifier for that path.
